@@ -1,0 +1,302 @@
+@import url(reset.css);
+
+@font-face{  
+
+	font-family: 'MyriadProRegular';
+
+	src: url('../fonts/MyriadProRegular.ttf');
+
+	src: url('../fonts/MyriadProRegular.ttf') format('truetype');
+
+	font-weight: normal;
+
+	font-style: normal;
+}
+
+@font-face{  
+
+	font-family: 'MyriadProBold';
+
+	src: url('../fonts/MyriadProBold.ttf');
+
+	src: url('../fonts/MyriadProBold.ttf') format('truetype');
+
+	font-weight: bold;
+
+	font-style: normal;
+}
+
+body {
+	font: 13px Arial, sans-serif;
+	color: #323232;
+	background: url(../images/body_bg.jpg) 0 top repeat-x #e2e2e2;
+}
+
+/* каркас начало */
+
+.wrapper {
+	width: 920px;
+	margin: 0 auto;
+}
+
+	/* шапка начало */
+	.head {
+		height: 104px;
+		overflow: hidden;
+	}
+
+		.head img {
+			margin: 22px 0 0 2px;
+		}
+	/* шапка конец */
+	
+	/* навигация начало */
+
+	.nav {
+		overflow: hidden;
+		border: 1px solid #ccc;
+		border-radius: 8px;
+		background: url(../images/nav_bg.jpg) repeat-x #e6e6e6;
+		width: 100%;
+		list-style: none;
+	}
+	
+		.nav li {
+			float: left;
+			width: 20%;
+		}
+
+			.nav li a {
+				display: block;
+				text-decoration: none;
+				font: 20px 'MyriadProRegular', sans-serif;
+				height: 51px;
+				color: #000;
+				text-align: center;
+				line-height: 51px;
+				border-right: 1px solid #ccc;
+				transition: .3s;
+			}
+
+			.nav li:last-child a {
+				border-right: none;
+			}
+
+			.nav li a:hover {
+				background: #439cae;
+				color: #fff;
+			}
+
+	/* навигация конец */
+
+	/* начало слайдер */
+
+	.slider {
+		height: 429px;
+		background: url(../images/2_dars.png) 0 bottom no-repeat;
+	}
+
+		.text_block {
+			float: right;
+			margin: 123px 41px 0 0;
+		}
+
+			.text_block h1 {
+				font: 58px 'MyriadProBold', sans-serif;
+				color: #000;
+				letter-spacing: -2.5px;
+				text-align: center;
+				line-height: 50px;
+				margin-bottom: 37px;
+			}
+
+				.text_block h1 span {
+					font-size: 40px;
+				}
+
+			.text_block a {
+				display: block;
+				margin: 0 auto;
+				width: 210px;
+				height: 47px;
+				background-color: #3691a6;
+				border-radius: 8px;
+				text-decoration: none;
+				color: #fff;
+				font: bold 28px 'MyriadProRegular', sans-serif;
+				text-align: center;
+				padding: 6px 0 0 0;
+				letter-spacing: .5px;
+			}
+	/* слайдер конец */
+
+	/* начало поста */
+
+	.post_head {
+		background-color: #fff;
+		border: solid #ccc;
+		border-width: 1px 1px 0 1px;
+		overflow: hidden;
+		border-radius: 8px 8px 0 0;
+		padding: 20px 20px;
+	}
+
+		.post {
+			float: left;
+			width: 210px;
+			margin-right: 12px;
+		}
+
+		.post:last-child {
+			margin-right: 0;
+		}
+
+			.post h3 {
+				margin: 15px 0 6px 15px;
+			}
+
+				.post h3 a {
+					text-decoration: none;
+					color: #318ea2;
+				}
+
+				.post h3 a:hover {
+					text-decoration: underline;
+				}
+
+			.post p {
+				line-height: 15px;
+				margin: 0 5px 0 15px;
+			}
+
+			.post > a {
+				display: block;
+				width: 17px;
+				height: 17px;
+				border-radius: 50%;
+				background: url(../images/3_strelka.png) center center no-repeat #318ea2;
+				margin: 17px 0 0 15px;
+			}
+
+
+	/* конец поста */
+
+	/* начало контента */
+
+	.content {
+		overflow: hidden;
+		background-color: #f5f5f5;
+		padding: 43px 32px 37px 37px;
+		border: solid #ccc;
+		border-width: 0 1px 1px 1px;
+		border-radius: 0 0 8px 8px;
+	}
+
+		/* 4.1 */
+
+		.block_left {
+			float: left;
+			width: calc(100% - 340px);
+		}
+
+			.block_left h2 {
+				font: bold 33px 'MyriadProRegular', sans-serif;
+				margin-bottom: 27px;
+			}
+
+			.block_left > p {
+				font-weight: bold;
+				line-height: 17px;
+				margin-bottom: 17px;
+			}
+
+			.block_left .darc_content {
+				background: url(../images/4_korobka.png) 0 top no-repeat;
+				padding: 11px 0 0 133px;
+			}
+
+				.darc_content p {
+					line-height: 17px;
+					margin: 0 0 25px 0;
+				}
+
+			.block_left ul {
+				float: left;
+				list-style: inside url(../images/4_strelka_dark.png);
+			}
+
+			.block_left ul:first-of-type {
+				margin-right: 55px;
+			}
+
+			.block_left ul:last-of-type {
+				padding-left: 25px;
+				border-left: 1px solid #dadada;
+			}
+
+				.block_left ul li {
+					margin-bottom: 5px;
+				}
+
+					.block_left ul li a {
+						color: #308da2;
+					}
+
+		/* 4.1 */
+
+		/* 4.2 */
+
+		.block_right {
+			float: right;
+			width: 290px;
+		}
+
+			.block_right h2 {
+				font: bold 33px 'MyriadProRegular', sans-serif;
+				margin-bottom: 27px;
+			}
+
+			.post_content {
+				margin-bottom: 32px;
+				overflow: hidden;
+			}
+
+			.post_content:last-child {
+				margin-bottom: 0;
+			}
+
+				.post_content div {
+					float: left;
+				}
+
+				.post_content div:first-child {
+					width: 111px;
+				}
+
+
+				.post_content div:last-child {
+					width: calc(100% - 111px);
+				}
+
+					.post_content div:last-child p {
+						line-height: 17px;
+						margin-bottom: 17px;
+					}
+
+			
+		/* 4.2 */
+	
+	/* конец контента */
+
+	/* начало подвал */
+	.footer {
+		padding: 27px 0 47px 0;
+	}
+
+		.footer p {
+			text-align: center;
+			color: #000;
+		}
+	/* конец подвал */
+
+/* каркас конец */
